@@ -1,0 +1,11 @@
+/* Página exibida quando o usuário acessa uma rota inexistente. */
+.not-found-card {
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+}
+
+.not-found-card p {
+  margin: 0 0 8px;
+  color: var(--muted);
+}

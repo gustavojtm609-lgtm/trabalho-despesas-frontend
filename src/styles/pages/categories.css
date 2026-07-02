@@ -1,0 +1,28 @@
+/* =========================================================
+   CATEGORIES.CSS
+   Estilo específico da página Categorias.
+   ========================================================= */
+
+.categories-page .category-form-card {
+  position: sticky;
+  top: 110px;
+}
+
+.category-list-card table {
+  min-width: 650px;
+}
+
+.category-list-card td:first-child {
+  color: var(--primary-dark);
+  font-weight: 900;
+}
+
+body[data-theme='dark'] .category-list-card td:first-child {
+  color: var(--primary);
+}
+
+@media (max-width: 900px) {
+  .categories-page .category-form-card {
+    position: static;
+  }
+}

@@ -1,0 +1,30 @@
+/* =========================================================
+   EXPENSES.CSS
+   Estilo específico da página Despesas.
+   ========================================================= */
+
+.expense-form-card,
+.expense-filters-card {
+  min-height: 100%;
+}
+
+.expense-list-card .sort-actions {
+  margin-bottom: 16px;
+}
+
+.expense-list-card td:nth-child(5) {
+  color: var(--primary-dark);
+  font-weight: 900;
+}
+
+body[data-theme='dark'] .expense-list-card td:nth-child(5) {
+  color: var(--primary);
+}
+
+.expense-filters-card {
+  background: linear-gradient(145deg, #ffffff, #f5fff7);
+}
+
+body[data-theme='dark'] .expense-filters-card {
+  background: linear-gradient(145deg, #0f2c1c, #153722);
+}

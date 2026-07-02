@@ -1,0 +1,26 @@
+/* Mensagens de feedback exibidas acima dos formulários. */
+.alert {
+  margin-bottom: 16px;
+  padding: 13px 15px;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.alert-danger {
+  color: #8f1313;
+  background: #ffe2e2;
+  border: 1px solid #ffb6b6;
+}
+
+.alert-success {
+  color: #0b6b39;
+  background: #ddfbe9;
+  border: 1px solid #a5edc3;
+}
+
+.alert-info {
+  color: var(--text);
+  background: var(--primary-soft);
+  border: 1px solid var(--border);
+}

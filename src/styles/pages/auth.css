@@ -1,0 +1,151 @@
+/* =========================================================
+   AUTH.CSS
+   Estilo das telas de Login, Cadastro e Página não encontrada.
+   Foi inspirado no modelo verde enviado pelo usuário.
+   ========================================================= */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 28px 18px;
+  background: linear-gradient(180deg, #eefbed 0%, #f8fff7 100%);
+}
+
+body[data-theme='dark'] .auth-page {
+  background: linear-gradient(180deg, #06180d 0%, #082013 100%);
+}
+
+.auth-brand {
+  text-align: center;
+}
+
+.auth-logo {
+  width: 64px;
+  height: 64px;
+  display: inline-grid;
+  place-items: center;
+  margin-bottom: 10px;
+  color: #ffffff;
+  background: var(--primary);
+  border-radius: 50%;
+  font-size: 28px;
+  box-shadow: 0 12px 24px rgba(31, 200, 109, 0.30);
+}
+
+.auth-logo.small {
+  width: 48px;
+  height: 48px;
+  font-weight: 900;
+}
+
+.auth-brand h1 {
+  margin: 0;
+  color: #0b743b;
+  font-size: 24px;
+}
+
+body[data-theme='dark'] .auth-brand h1 {
+  color: var(--primary);
+}
+
+.auth-brand p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.auth-card {
+  width: min(410px, 100%);
+  padding: 26px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 14px 28px rgba(22, 93, 51, 0.10);
+}
+
+body[data-theme='dark'] .auth-card {
+  background: rgba(15, 44, 28, 0.96);
+}
+
+.auth-card.center {
+  text-align: center;
+}
+
+.auth-card-title {
+  margin-bottom: 18px;
+}
+
+.auth-card-title h2 {
+  margin: 0;
+  color: var(--text);
+  font-size: 22px;
+}
+
+.auth-card-title p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.auth-form input {
+  min-height: 50px;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+body[data-theme='dark'] .auth-form input {
+  background: var(--card-2);
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.forgot-link {
+  color: var(--primary-dark);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 22px 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: '';
+  height: 1px;
+  flex: 1;
+  background: var(--border);
+}
+
+.auth-copy {
+  max-width: 410px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+  .auth-page {
+    justify-content: flex-start;
+    padding-top: 34px;
+  }
+
+  .auth-card {
+    padding: 22px;
+  }
+}
