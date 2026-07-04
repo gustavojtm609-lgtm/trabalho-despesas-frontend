@@ -68,17 +68,17 @@ export default function Register() {
         <form className="form auth-form" onSubmit={handleSubmit}>
           <label>
             Nome
-            <input name="nome" placeholder="👤  Seu nome" value={form.nome} onChange={handleChange} />
+            <input name="nome" placeholder="Seu nome" value={form.nome} onChange={handleChange} />
           </label>
 
           <label>
             E-mail
-            <input type="email" name="email" placeholder="✉️  email@exemplo.com" value={form.email} onChange={handleChange} />
+            <input type="email" name="email" placeholder="seu@email.com" value={form.email} onChange={handleChange} />
           </label>
 
           <label>
             Senha
-            <input type="password" name="senha" placeholder="🔒  Mínimo 6 caracteres" value={form.senha} onChange={handleChange} />
+            <input type="password" name="senha" placeholder="••••••••" value={form.senha} onChange={handleChange} />
           </label>
 
           <button className="btn btn-primary btn-full" type="submit" disabled={loading}>
@@ -96,7 +96,7 @@ export default function Register() {
       </section>
 
       <footer className="auth-copy">
-        © 2024 Financier Instituição de Pagamento S.A.<br />
+        © 2024 Finanças Instituição de Pagamento S.A.<br />
         Segurança e criptografia de ponta a ponta.
       </footer>
     </main>

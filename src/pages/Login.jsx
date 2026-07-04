@@ -52,7 +52,7 @@ export default function Login() {
 
       <section className="auth-card">
         <div className="auth-card-title">
-          <h2>Bem-vindo de volta</h2>
+          <h2>Bem-vindo</h2>
           <p>Acesse sua conta para continuar</p>
         </div>
 
