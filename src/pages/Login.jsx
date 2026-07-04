@@ -64,7 +64,7 @@ export default function Login() {
             <input
               type="email"
               name="email"
-              placeholder="✉️  seu@email.com"
+              placeholder="seu@email.com"
               value={form.email}
               onChange={handleChange}
             />
@@ -78,7 +78,7 @@ export default function Login() {
             <input
               type="password"
               name="senha"
-              placeholder="🔒  ••••••••"
+              placeholder="••••••••"
               value={form.senha}
               onChange={handleChange}
             />
@@ -99,7 +99,7 @@ export default function Login() {
       </section>
 
       <footer className="auth-copy">
-        © 2024 Financier Instituição de Pagamento S.A.<br />
+        © 2024 Finanças Instituição de Pagamento S.A.<br />
         Segurança e criptografia de ponta a ponta.
       </footer>
     </main>
